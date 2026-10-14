@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Chart colours as tokens so light/dark both stay legible. */
+:root {
+  --chart-actual: #0f172a;
+  --chart-forecast: #4f46e5;
+  --chart-band: #6366f1;
+  --chart-baseline: #94a3b8;
+  --chart-scenario: #0d9488;
+  --chart-override: #d97706;
+  --chart-grid: #e2e8f0;
+  --chart-axis: #64748b;
+  --chart-bad: #dc2626;
+  --chart-good: #059669;
+}
+.dark {
+  --chart-actual: #f1f5f9;
+  --chart-forecast: #818cf8;
+  --chart-band: #818cf8;
+  --chart-baseline: #64748b;
+  --chart-scenario: #2dd4bf;
+  --chart-override: #fbbf24;
+  --chart-grid: #1e293b;
+  --chart-axis: #94a3b8;
+  --chart-bad: #f87171;
+  --chart-good: #34d399;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: var(--chart-axis);
+  font-size: 12px;
+}
+
+@utility card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition
+    disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500;
+}
+@utility btn-primary {
+  @apply btn bg-indigo-600 text-white hover:bg-indigo-500;
+}
+@utility btn-ghost {
+  @apply btn border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800;
+}
+@utility btn-danger {
+  @apply btn text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-950;
+}
+@utility input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm outline-none transition
+    focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 dark:border-slate-700 dark:bg-slate-900;
+}
+@utility label {
+  @apply mb-1 block text-xs font-medium text-slate-600 dark:text-slate-400;
+}
+@utility th {
+  @apply px-4 py-2.5 text-left text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400;
+}
+@utility td {
+  @apply px-4 py-3 text-sm;
+}

@@ -1,0 +1,104 @@
+{
+  "_note": "Festival dates for lunar-calendar festivals are approximate and can shift by a day depending on region and moon sighting. Edit this file to correct dates or add years. 'uplift' is the planner's expected demand multiplier per product category at the peak of the shopping window.",
+  "festivals": [
+    {
+      "key": "pongal",
+      "name": "Pongal / Makar Sankranti",
+      "regions": ["South"],
+      "days_before": 10,
+      "days_after": 1,
+      "uplift": {"television": 1.10, "refrigerator": 1.08},
+      "dates": {"2023": "2023-01-15", "2024": "2024-01-15", "2025": "2025-01-14", "2026": "2026-01-14", "2027": "2027-01-15", "2028": "2028-01-15"}
+    },
+    {
+      "key": "republic_day_sale",
+      "name": "Republic Day Sale",
+      "regions": null,
+      "days_before": 7,
+      "days_after": 1,
+      "uplift": {"television": 1.12, "refrigerator": 1.08, "air_conditioner": 1.05},
+      "dates": {"2023": "2023-01-26", "2024": "2024-01-26", "2025": "2025-01-26", "2026": "2026-01-26", "2027": "2027-01-26", "2028": "2028-01-26"}
+    },
+    {
+      "key": "holi",
+      "name": "Holi",
+      "regions": ["North", "West"],
+      "days_before": 10,
+      "days_after": 1,
+      "uplift": {"refrigerator": 1.08, "air_conditioner": 1.08, "television": 1.05},
+      "dates": {"2023": "2023-03-08", "2024": "2024-03-25", "2025": "2025-03-14", "2026": "2026-03-04", "2027": "2027-03-22", "2028": "2028-03-11"}
+    },
+    {
+      "key": "eid_al_fitr",
+      "name": "Eid al-Fitr",
+      "regions": null,
+      "days_before": 14,
+      "days_after": 1,
+      "uplift": {"television": 1.08, "refrigerator": 1.10, "air_conditioner": 1.05},
+      "dates": {"2023": "2023-04-22", "2024": "2024-04-11", "2025": "2025-03-31", "2026": "2026-03-21", "2027": "2027-03-10", "2028": "2028-02-27"}
+    },
+    {
+      "key": "independence_day_sale",
+      "name": "Independence Day Sale",
+      "regions": null,
+      "days_before": 7,
+      "days_after": 1,
+      "uplift": {"television": 1.10, "refrigerator": 1.06, "air_conditioner": 1.04},
+      "dates": {"2023": "2023-08-15", "2024": "2024-08-15", "2025": "2025-08-15", "2026": "2026-08-15", "2027": "2027-08-15", "2028": "2028-08-15"}
+    },
+    {
+      "key": "onam",
+      "name": "Onam",
+      "regions": ["South"],
+      "days_before": 14,
+      "days_after": 1,
+      "uplift": {"television": 1.15, "refrigerator": 1.12, "air_conditioner": 1.03},
+      "dates": {"2023": "2023-08-29", "2024": "2024-09-15", "2025": "2025-09-05", "2026": "2026-08-26", "2027": "2027-09-12"}
+    },
+    {
+      "key": "ganesh_chaturthi",
+      "name": "Ganesh Chaturthi",
+      "regions": ["West"],
+      "days_before": 10,
+      "days_after": 2,
+      "uplift": {"television": 1.10, "refrigerator": 1.06},
+      "dates": {"2023": "2023-09-19", "2024": "2024-09-07", "2025": "2025-08-27", "2026": "2026-09-14", "2027": "2027-09-04"}
+    },
+    {
+      "key": "durga_puja",
+      "name": "Durga Puja",
+      "regions": ["East"],
+      "days_before": 14,
+      "days_after": 1,
+      "uplift": {"television": 1.20, "refrigerator": 1.12, "air_conditioner": 1.03},
+      "dates": {"2023": "2023-10-24", "2024": "2024-10-12", "2025": "2025-10-02", "2026": "2026-10-20", "2027": "2027-10-09"}
+    },
+    {
+      "key": "navratri_dussehra",
+      "name": "Navratri & Dussehra",
+      "regions": ["North", "West", "South"],
+      "days_before": 9,
+      "days_after": 1,
+      "uplift": {"television": 1.10, "refrigerator": 1.06},
+      "dates": {"2023": "2023-10-24", "2024": "2024-10-12", "2025": "2025-10-02", "2026": "2026-10-20", "2027": "2027-10-09"}
+    },
+    {
+      "key": "diwali",
+      "name": "Diwali",
+      "regions": null,
+      "days_before": 21,
+      "days_after": 2,
+      "uplift": {"television": 1.35, "refrigerator": 1.25, "air_conditioner": 1.08},
+      "dates": {"2023": "2023-11-12", "2024": "2024-11-01", "2025": "2025-10-20", "2026": "2026-11-08", "2027": "2027-10-29", "2028": "2028-10-17"}
+    },
+    {
+      "key": "christmas_new_year",
+      "name": "Christmas & New Year Sale",
+      "regions": null,
+      "days_before": 10,
+      "days_after": 7,
+      "uplift": {"television": 1.08, "refrigerator": 1.05},
+      "dates": {"2023": "2023-12-25", "2024": "2024-12-25", "2025": "2025-12-25", "2026": "2026-12-25", "2027": "2027-12-25"}
+    }
+  ]
+}

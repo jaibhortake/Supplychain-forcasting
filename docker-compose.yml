@@ -1,0 +1,25 @@
+# One-command start:  docker compose up --build   ->  http://localhost:8080
+services:
+  backend:
+    build: ./backend
+    environment:
+      # Reach Ollama running on the host machine (optional, only the chat assistant needs it).
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2}
+      CORS_ORIGINS: '["http://localhost:8080"]'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - backend-data:/app/storage
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend-data:
