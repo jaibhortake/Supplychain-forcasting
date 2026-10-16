@@ -176,8 +176,6 @@ What changed compared with the PoC:
 
 ## Limitations & next steps
 
-* **Demo data is synthetic.** It is realistic (seasonality, festivals, noise, hidden shocks) but generated. Load real
-  sales for real conclusions.
 * No login yet. The user name in the sidebar is used for the audit log. Next step: SSO or JWT auth with roles.
 * SQLite by default. Set `DATABASE_URL` to PostgreSQL for multi-user production use, and add Alembic migrations.
 * Possible additions: learning event effects from history automatically, live weather data for AC demand, and
